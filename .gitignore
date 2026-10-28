@@ -1,0 +1,20 @@
+#Dependencias 
+node_modules/
+
+#secretos
+.env
+.env.local
+.env.*.local
+
+#buids
+dist/
+dev-dist/
+
+#sistema y editor 
+.DS_Store
+Thumbs.db
+.vscode/*
+!.vscode/extensions.json
+
+#vercel
+.vercel

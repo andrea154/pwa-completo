@@ -1,0 +1,27 @@
+{
+  "name": "server",
+  "version": "1.1.0",
+  "type": "module",
+  "description": "API del To-Do PWA (Express + Mongoose + Web Push)",
+  "scripts": {
+    "dev": "nodemon src/server-local.js",
+    "start": "node src/server-local.js",
+    "db:indexes": "node scripts/sync-indexes.js",
+    "vapid": "web-push generate-vapid-keys"
+  },
+  "engines": { "node": ">=20" },
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.2",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.18.1",
+    "morgan": "^1.10.1",
+    "web-push": "^3.6.7"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
+ 
