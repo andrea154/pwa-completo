@@ -1,7 +1,7 @@
 // controllers/cron.controller.js
 // Lo llama un cron externo (GitHub Actions) cada ~15 min.
 // Busca tareas que vencen pronto (o ya vencieron) y aún no se recordaron
-import Task from "../models/task.js";
+import Task from "../models/Task.js";
 import { pushEnabled, sendToUser } from "../services/push.service.js";
 
 const WINDOW_MIN = Number(process.env.REMINDER_WINDOW_MIN || 60);

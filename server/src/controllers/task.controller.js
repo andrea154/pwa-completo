@@ -2,7 +2,7 @@
 // En Express 5 los errores de funciones async llegan solos al manejador de errores,
 // por eso no hace falta try/catch en cada función.
 import mongoose from "mongoose";
-import Task, { STATUS, PRIORITY } from "../models/task.js";
+import Task, { STATUS, PRIORITY } from "../models/Task.js";
 import { httpError } from "../utils/httpError.js";
 
 /** Toma del body SOLO los campos editables y los valida. Ignora el resto. */
