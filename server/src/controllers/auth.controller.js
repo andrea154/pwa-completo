@@ -1,5 +1,5 @@
 import bcrypt from "bcryptjs";
-import User from "../models/user.js";
+import User from "../models/User.js";
 import { signToken } from "../utils/jwt.js";
 
 const publicUser = (u) => ({ id: u._id, name: u.name, email: u.email });
